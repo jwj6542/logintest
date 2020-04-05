@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
 
 
-                Response.Listener<String> resopnseListener = new Response.Listener<String>() {
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
@@ -76,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     }
                 };
-                LoginRequest loginRequest = new LoginRequest(userID,userPassword,resopnseListener);
+                LoginRequest loginRequest = new LoginRequest(userID,userPassword,responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
 
