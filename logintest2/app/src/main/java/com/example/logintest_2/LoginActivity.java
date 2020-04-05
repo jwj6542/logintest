@@ -47,9 +47,6 @@ public class LoginActivity extends AppCompatActivity {
                 final String userID = et_id.getText().toString();
                 final String userPassword = et_password.getText().toString();
 
-                Intent intent = new Intent(LoginActivity.this,ActivityLogup.class);
-                startActivity(intent);
-
 
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override

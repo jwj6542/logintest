@@ -63,7 +63,6 @@ public class ActivityLogup extends AppCompatActivity {
                 RegisterRequest registerRequest = new RegisterRequest(userID,userPassword,userName,userage,responseListener);
                 RequestQueue queue = Volley.newRequestQueue(ActivityLogup.this);
                 queue.add(registerRequest);
-
             }
         });
     }
